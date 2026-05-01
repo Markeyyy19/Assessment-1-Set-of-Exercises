@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ancient Rome - A Visual Journey</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      min-height: 100vh;
+      padding: 40px 20px;
+      color: #e8e8e8;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #d4af37;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .subtitle {
+      text-align: center;
+      font-style: italic;
+      color: #a0a0a0;
+      margin-bottom: 40px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .image-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 350px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .image-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+    }
+
+    .image-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+
+      /* CSS Filters applied to all images */
+      filter: sepia(30%) contrast(110%) brightness(95%) saturate(120%);
+      transition: filter 0.3s ease;
+    }
+
+    .image-card:hover img {
+      filter: sepia(10%) contrast(115%) brightness(100%) saturate(130%);
+    }
+
+    .image-card h2 {
+      margin-top: 15px;
+      font-size: 1.3rem;
+      color: #d4af37;
+    }
+
+    .image-card p {
+      margin-top: 8px;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #c0c0c0;
+    }
+
+    .license {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.8rem;
+      color: #888;
+    }
+
+    .license a {
+      color: #7eb8da;
+      text-decoration: none;
+    }
+
+    .license a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Ancient Rome</h1>
+  <p class="subtitle">A visual journey through the Eternal City's iconic monuments</p>
+
+  <div class="gallery">
+
+    <article class="image-card">
+      <img src="Colloseum.jpeg"
+        width="600"
+        height="400"
+        title="The Colosseum - Rome's iconic ancient amphitheater built in 80 AD"
+      >
+      <h2>The Colosseum</h2>
+      <p>The largest ancient amphitheater ever built, the Colosseum once held 50,000 spectators for gladiatorial contests and public spectacles.</p>
+    </article>
+
+    <article class="image-card">
+      <img src="Pantheon.jpeg" 
+        width="600"
+        height="400"
+        title="The Pantheon - A remarkably preserved Roman temple from 126 AD"
+      >
+      <h2>The Pantheon</h2>
+      <p>Originally a temple to all Roman gods, the Pantheon features the world's largest unreinforced concrete dome, with its famous oculus open to the sky.</p>
+    </article>
+
+    <article class="image-card">
+      <img src="Roman Forum.jpeg" 
+        width="600"
+        height="400"
+        title="The Roman Forum - The heart of ancient Rome's political and social life"
+      >
+      <h2>The Roman Forum</h2>
+      <p>Once the center of Roman public life, the Forum contains the ruins of ancient government buildings, temples, and triumphal arches spanning centuries of history.</p>
+    </article>
+
+  </div>
+
+</body>
+</html>
